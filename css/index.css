@@ -1,0 +1,39 @@
+:root {
+    /* 10px = 1 rem */
+    font-size: 62.5%;
+
+    /*Fonts variables*/
+    --font: 'Raleway', sans-serif;
+    --font-bold : 700;
+    --font-regular: 300;
+    --font-alt: 400;
+    --text-small: 1.4rem;
+    --text-normal: 1.6rem;
+    --text-xl: 2rem;
+
+    /*Colors Variables*/
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-blue: #0065FC;
+    --color-light-blue: #DEEBFF;
+    --color-gray: #F2F2F2;
+}
+
+body{
+    font-family: var(--font);
+    font-weight: var(--font-regular);
+    font-size: var(--text-normal);
+    color: var(--color-black);
+    background-color: var(--color-white);
+
+    box-sizing: border-box;
+}
+
+/*Test Font-awesome*/
+i{
+    color: red;
+    font-size: 10rem;
+}
+
+
+
