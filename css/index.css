@@ -1,3 +1,5 @@
+
+/*region Variables*/
 :root {
     /* 10px = 1 rem */
     font-size: 62.5%;
@@ -18,22 +20,26 @@
     --color-light-blue: #DEEBFF;
     --color-gray: #F2F2F2;
 }
+/*endregion*/
 
+/*region Global*/
 body{
     font-family: var(--font);
     font-weight: var(--font-regular);
     font-size: var(--text-normal);
     color: var(--color-black);
     background-color: var(--color-white);
-
     box-sizing: border-box;
 }
 
-/*Test Font-awesome*/
-i{
-    color: red;
-    font-size: 10rem;
+ul{
+    padding-left: 0;
+    list-style: none;
 }
+
+
+
+/*endregion*/
 
 
 
