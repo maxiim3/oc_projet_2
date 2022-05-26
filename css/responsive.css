@@ -1,0 +1,113 @@
+@media only screen and (max-width: 380px) {
+  :root {
+    --text-small: 1.2rem;
+    --text-normal: 1.3rem;
+    --text-xl: 1.6rem;
+  }
+}
+@media only screen and (min-width: 381px) and (max-width: 620px) {
+  :root {
+    --text-small: 1.3rem;
+    --text-normal: 1.4rem;
+    --text-xl: 1.8rem;
+  }
+}
+@media only screen and (min-width: 620px) and (max-width: 970px) {
+  :root {
+    --text-small: 1.5rem;
+    --text-normal: 1.7rem;
+    --text-xl: 2.1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body > header,
+  body > main,
+  body > footer {
+    padding-inline: 0;
+  }
+  body > header > section {
+    padding-inline: 3rem;
+  }
+  nav {
+    height: 20vh;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+  nav img {
+    height: 66%;
+    padding-top: 3rem;
+    object-fit: contain;
+  }
+  nav ul {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  nav ul li {
+    flex-grow: 1;
+    border-top: none;
+    border-bottom: 3px solid var(--color-gray);
+  }
+  nav ul li:hover {
+    border-top: none;
+    border-bottom: 3px solid var(--color-blue);
+  }
+  .form button {
+    width: var(--square-icon);
+    border-radius: var(--rounded);
+    margin-inline: auto;
+    position: relative;
+  }
+  .search-icon {
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    left: 18px;
+  }
+  .search-text {
+    display: none;
+  }
+  .filters h3 {
+    width: 100%;
+  }
+  .filter-item {
+  }
+  .form button {
+    width: var(--square-icon);
+    border-radius: var(--rounded);
+    margin-inline: auto;
+    position: relative;
+  }
+  .search-icon {
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    left: 18px;
+  }
+  .search-text {
+    display: none;
+  }
+  .filters h3 {
+    width: 100%;
+  }
+  .filter-item {
+  }
+  .hosting {
+    background-color: var(--color-white);
+  }
+  .hosting .card-container {
+    flex-direction: column;
+  }
+  .hosting .card {
+    width: var(--card-width);
+  }
+  .most-popular{
+    order: -1;
+    border-radius: 0px;
+  }
+  .most-popular .card-container{
+  }
+}
