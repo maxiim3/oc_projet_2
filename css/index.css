@@ -113,7 +113,7 @@ h2 {
 h3,
 input,
 button {
-  font-size: calc(var(--text-normal) + 2px);
+  font-size: min(16px, calc(var(--text-normal) + 2px));
 }
 
 h4,
