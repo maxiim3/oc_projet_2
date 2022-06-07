@@ -3,6 +3,12 @@
     --card-width--tablet: 250px;
     --card-height--tablet: 160px;
   }
+
+  body > main,
+  body > header {
+    padding-inline: 30px;
+  }
+
   main {
     display: flex;
     align-self: center;
@@ -50,8 +56,16 @@
   .most-popular .card,
   .activities .card {
     width: var(--card-width--tablet);
+  }
+
+  .hosting .card,
+  .activities .card {
     height: var(--card-height--tablet);
   }
+  .most-popular .card{
+    height: 120px;
+  }
+
   .hosting,
   .activities {
     background-color: var(--color-white);
@@ -90,7 +104,7 @@
   }
 
   /*endregion*/
-/*endregion*/
+  /*endregion*/
   /*region ⭐️ Footer*/
   .main-footer .inner-container {
     align-items: start;
