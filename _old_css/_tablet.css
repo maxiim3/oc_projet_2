@@ -1,0 +1,117 @@
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  :root {
+    --card-width--tablet: 250px;
+    --card-height--tablet: 160px;
+  }
+
+  body > main,
+  body > header {
+    padding-inline: 30px;
+  }
+
+  main {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --shadow-accent: rgba(0, 0, 0, 0.3);
+    row-gap: min(30px, 10vw);
+    column-gap: min(30px, 1%);
+  }
+  /*region ⭐️ Header*/
+  /*region Filters*/
+  .filters h2 {
+    flex-basis: 100%;
+  }
+  /*endregion*/
+  /*endregion*/
+
+  /*region ⭐️ Main*/
+  body > main {
+    width: 100%;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+  .most-popular,
+  .hosting,
+  .activities {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-radius: 0;
+  }
+
+  .hosting,
+  .most-popular,
+  .activities .cards-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .hosting .card,
+  .most-popular .card,
+  .activities .card {
+    width: var(--card-width--tablet);
+  }
+
+  .hosting .card,
+  .activities .card {
+    height: var(--card-height--tablet);
+  }
+  .most-popular .card{
+    height: 120px;
+  }
+
+  .hosting,
+  .activities {
+    background-color: var(--color-white);
+  }
+  .most-popular .card-header {
+    overflow: hidden;
+    width: 35%;
+    height: calc(100% - 8px);
+    margin-left: 4px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-block: auto;
+  }
+
+  /*region ⭐️ Most-popular*/
+  .most-popular {
+    order: -1;
+    flex-wrap: wrap;
+  }
+  .most-popular .most-popular--header {
+    flex: 200%;
+  }
+
+  /*endregion*/
+
+  /*region ⭐️ Activities*/
+  .activities .card-header {
+    width: calc(100% - 8px);
+    height: 60%;
+    margin-top: 4px;
+    margin-inline: auto;
+  }
+
+  .activities .card-content {
+    margin-inline: 15px;
+  }
+
+  /*endregion*/
+  /*endregion*/
+  /*region ⭐️ Footer*/
+  .main-footer .inner-container {
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 200px;
+  }
+  /*endregion*/
+}

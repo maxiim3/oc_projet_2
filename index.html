@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-<!--    todo régler les padding et gap sur version mobile et tablette-->
     <!--    Metas   -->
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<!--    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />-->
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <!--
         Add Social Media cards
@@ -14,7 +12,7 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <!--    CSS -->
@@ -40,81 +38,83 @@
   </head>
   <body>
     <!--#region Header-->
-    <header>
+    <header class="header">
       <!--#region Navigation-->
-      <nav>
-        <img alt="Booki, page d'accueil" src="./assets/logo/Booki.png" />
-        <ul>
+      <nav class="navigation">
+        <img
+          class="navigation--logo"
+          alt="Booki, page d'accueil"
+          src="./assets/logo/Booki.png"
+        />
+        <ul class="navigation--items">
           <li>
-            <a href="#hosting">Hébergement</a>
+            <a class="navigation--link" href="#hosting"><p>Hébergements</p></a>
           </li>
           <li>
-            <a href="#activities">Activités</a>
+            <a class="navigation--link" href="#activities"><p>Activités</p></a>
           </li>
         </ul>
       </nav>
       <!--#endregion Navigation-->
       <!--#region section-recherche-->
       <section>
-        <div class="header--header">
+        <div class="header--main-title">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre-ville ou en pleine nature</p>
         </div>
-        <div class="search-and-filters">
-          <!--region Formulaire de recherche-->
-          <form class="form">
-            <label for="search-city">
-              <i class="fa fa-location-dot"></i>
-            </label>
-            <input
-              id="search-city"
-              placeholder="Recherchez une ville"
-              type="text"
-              value="Marseille, France"
-            />
-            <button type="submit">
-              <span class="search-text">Rechercher</span>
-              <span class="search-icon">
-                <i class="fa fa-magnifying-glass"></i>
-              </span>
-            </button>
-          </form>
-          <!--endregion-->
-          <!--region Filtres-->
-          <div class="filters">
-            <h2 aria-label="Section filtres">Filtres</h2>
+        <!--region Formulaire de recherche-->
+        <form class="header--main-form">
+          <label for="search-city">
+            <i class="fa fa-location-dot"></i>
+          </label>
+          <input
+            id="search-city"
+            placeholder="Recherchez une ville"
+            type="text"
+            value="Marseille, France"
+          />
+          <button type="submit">
+            <span class="search-text">Rechercher</span>
+            <span class="search-icon">
+              <i class="fa fa-magnifying-glass"></i>
+            </span>
+          </button>
+        </form>
+        <!--endregion-->
+        <!--region Filtres-->
+        <div class="header--main-filters">
+          <h2 aria-label="Section filtres">Filtres</h2>
 
-            <a aria-label="Économique" class="filter-item" href="#">
-              <span class="filter-icon">
-                <i class="fa fa-money-bill-1-wave"></i>
-              </span>
-              <p>Économique</p>
-            </a>
+          <a aria-label="Économique" class="filter-item" href="#">
+            <span class="filter-icon">
+              <i class="fa fa-money-bill-1-wave"></i>
+            </span>
+            <p>Économique</p>
+          </a>
 
-            <a aria-label="Famillial" class="filter-item" href="#">
-              <span class="filter-icon">
-                <i class="fa fa-child-reaching"></i>
-              </span>
-              <p>Familial</p>
-            </a>
+          <a aria-label="Familial" class="filter-item" href="#">
+            <span class="filter-icon">
+              <i class="fa fa-child-reaching"></i>
+            </span>
+            <p>Familial</p>
+          </a>
 
-            <a aria-label="Romantique" class="filter-item" href="#">
-              <span class="filter-icon">
-                <i class="fa fa-heart"></i>
-              </span>
-              <p>Romantique</p>
-            </a>
+          <a aria-label="Romantique" class="filter-item" href="#">
+            <span class="filter-icon">
+              <i class="fa fa-heart"></i>
+            </span>
+            <p>Romantique</p>
+          </a>
 
-            <a aria-label="Animaux Domestiques" class="filter-item" href="#">
-              <span class="filter-icon">
-                <i class="fa fa-dog"></i>
-              </span>
-              <p>Animaux autorisés</p>
-            </a>
-          </div>
-          <!--endregion Filtres-->
+          <a aria-label="Animaux Domestiques" class="filter-item" href="#">
+            <span class="filter-icon">
+              <i class="fa fa-dog"></i>
+            </span>
+            <p>Animaux autorisés</p>
+          </a>
         </div>
-        <div class="header--footer">
+        <!--endregion Filtres-->
+        <div class="header--main-info">
           <span> <i class="fa-solid fa-info"></i></span>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
@@ -123,7 +123,7 @@
     </header>
     <!--#endregion Header-->
     <!--#region Main-->
-    <main>
+    <main class="main">
       <!--#region section_hosting-->
       <section class="hosting" id="hosting">
         <h2 class="section-title">Hébergements à Marseille</h2>
@@ -429,7 +429,7 @@
     </main>
     <!--#endregion-->
     <!--#region Footer-->
-    <footer class="main-footer">
+    <footer class="footer">
       <div class="inner-container">
         <section>
           <h3>A propos</h3>
