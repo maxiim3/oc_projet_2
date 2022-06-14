@@ -13,5 +13,3 @@ Celle-ci propose des services de reservations et d'organisation de voyages.
 
 Suite à une refonte graphique du designer UX, je dois créer un prototype de la maquette afin de valider ce nouveau design.
 
-
-
