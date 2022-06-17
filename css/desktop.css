@@ -1,20 +1,18 @@
-@media only screen and (min-width: 769px) {
-  /*region Layout Desktop Margin*/
+@media screen and (min-width: 769px) and (max-width: 6000px){
   .header,
   .main {
-    margin-inline: 45px;
     max-width: 1350px;
+    padding-inline: min(47px, max(20px, 1%));
+    margin-inline: auto;
   }
-  /*endregion*/
-  /*region Header*/
   .header {
     gap: 10px;
   }
-  /*region Navigation*/
   .navigation {
     justify-content: space-between;
     height: 120px;
   }
+
   .navigation--logo {
     padding-top: 25px;
   }
@@ -34,11 +32,9 @@
   .navigation--link:nth-of-type(2) {
     width: 120px;
   }
-  /*endregion*/
   .header > section {
     gap: 20px;
   }
-  /*region Header Form*/
   .search-icon {
     display: none;
   }
@@ -48,11 +44,10 @@
   .header--main-form button {
     width: 140px;
   }
-  /*endregion*/
-  /*region Header Filters*/
+
   .header--main-filters {
-    gap: 20px;
     margin-top: 15px;
+    gap: 30px;
   }
   .filter--title {
     padding-right: 10px;
@@ -61,59 +56,142 @@
     font-size: 18px;
   }
   .filter--item h3 {
-    padding-left: 14px;
     padding-right: 23px;
+    padding-left: 14px;
   }
-  /*endregion*/
-  /*region Header Informations*/
-  .info--bubble {
-    transform: translateY(-2px);
+  .info--text {
+    letter-spacing: 0.3px;
   }
-  /*endregion*/
-  /*endregion*/
-  /*region Main Section*/
-  .hosting-layout {
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }
-  /*region Hosting Section*/
+
   .hosting {
-    max-width: 888px;
-    min-width: 602px;
     padding-left: 30px;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-  }
-  .hosting .card--wrapper {
-    max-width: calc((27px * 2) + (247px * 3)+ 30px); /*855px*/
   }
   .hosting .card {
     width: 247px;
   }
-
-  /*endregion*/
-  /*region Most Popular Section*/
   .most-popular {
-    width: 340px;
-    max-width: 855px; /*Hosting Card-wrapper Max Width*/
-    justify-self: stretch;
-    flex-grow: 1;
+    padding-inline: 30px;
   }
   .most-popular .card {
     width: 342px;
+  }
+
+  .activities .card {
+    border-radius: 20px;
+  }
+
+}
+@media only screen and (min-width: 993px) {
+
+
+  .hosting-layout {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hosting {
+    min-width: 602px;
+    max-width: 863px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .hosting .card--wrapper {
+    justify-content: flex-start;
+    max-width: calc((27px * 2) + (247px * 3)+ 30px);
+  }
+
+  .most-popular {
+    flex-grow: 1;
+    width: 340px;
+    max-width: 855px; /*Hosting Card-wrapper Max Width*/
+    justify-self: stretch;
+  }
+  .most-popular {
+    order: 2;
   }
 
   .most-popular .card-content {
     width: 185px;
   }
 
-  /*endregion*/
-  /*endregion*/
-}
+  .activities {
+    margin-top: 60px;
+    margin-bottom: 34px;
+  }
+  .activities .card--wrapper {
+    flex-direction: column;
+    height: 497px;
+    gap: 43px;
+  }
 
-@media only screen and (min-width: 993px) {
+  .activities .card {
+    width: min(303px, 22%);
+  }
+
+  .activities .card-header {
+    height: calc(100% - 65px);
+  }
+
+  .activities .card:nth-of-type(1),
+  .activities .card:nth-of-type(4) {
+    flex-grow: 1;
+  }
+  .activities .card:nth-of-type(2) {
+    flex-shrink: 1;
+    height: 52%;
+  }
+  .activities .card:nth-of-type(3) {
+    height: calc(100% - 52% - 43px);
+  }
+  .activities .card:nth-of-type(5) {
+    height: 44%;
+  }
+  .activities .card:nth-of-type(6) {
+    height: calc(100% - 44% - 43px);
+  }
+
+  .activities .card:nth-of-type(1) img {
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .activities .card:nth-of-type(2) img {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .activities .card:nth-of-type(3) img {
+    width: 102%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .activities .card:nth-of-type(4) img {
+    width: 105%;
+    height: 110%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .activities .card:nth-of-type(5) img {
+    width: 105%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .activities .card:nth-of-type(6) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .activities .card-content {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  /*endregion*/
+  /*endregion*/
 }

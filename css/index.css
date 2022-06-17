@@ -76,8 +76,8 @@ button:hover {
 /*region Animation*/
 /*region Form Button*/
 .header--main-form button:hover {
-  background-color: #f2f2f2;
   color: #0065fc;
+  background-color: #f2f2f2;
 }
 .header--main-form button {
   transition: all 80ms ease-out;
@@ -105,7 +105,6 @@ button:hover {
   from {
     opacity: 1;
     background-color: #f2f2f2;
-
   }
   to {
     transform: translateX(-60px) rotate(-180deg);
@@ -120,11 +119,11 @@ button:hover {
     transform: translateX(-60px) rotate(-180deg);
     visibility: hidden;
   }
-  30%{
+  30% {
     opacity: 0;
     transform: translateX(-30px) rotate(-90deg);
   }
-  90%{
+  90% {
     background-color: #f2f2f2;
   }
   100% {
@@ -145,22 +144,22 @@ button:hover {
   animation: filter-item-scale-in 850ms forwards;
 }
 .filter--item:hover .filter--icon {
-  animation : icon-fade-out 450ms forwards;
+  animation: icon-fade-out 450ms forwards;
 }
 .filter--item .filter--icon {
-  animation : icon-fade-in 350ms forwards;
+  animation: icon-fade-in 350ms forwards;
 }
 .filter--item:hover h3 {
   transform: translateX(-20px) scale(1.1);
 }
-.filter--item h3{
+.filter--item h3 {
   transition: all 300ms ease-in-out;
 }
 
 .filter--item:hover .fa {
   color: #727171;
 }
-.filter--item .fa{
+.filter--item .fa {
   transition: all 500ms ease-in-out;
 }
 /*endregion*/
@@ -196,9 +195,12 @@ button:hover {
 /*endregion*/
 
 /*endregion*/
+
 /*region Header*/
+
 .header {
   display: flex;
+  /*margin-bottom: 40px;*/
   flex-direction: column;
 }
 
@@ -238,13 +240,15 @@ button:hover {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: space-evenly;
+  margin-bottom: 30px;
+  gap: 40px;
 }
 
 /*region Main Title*/
 .header--main-title {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
   gap: 15px;
 }
 
@@ -306,9 +310,8 @@ button:hover {
 /*endregion*/
 /*region Form Button*/
 .header--main-form button {
-  left: calc(
-    55px /*Loupe Icon*/ - 3px /*Décalage gauche*/ + 232px /*Taille Input*/
-  );
+  /*Loupe Icon = Décalage gauche + Taille Input*/
+  left: calc(55px - 3px + 232px);
   height: 100%;
   color: white;
   background-color: #0065fc;
@@ -332,6 +335,7 @@ button:hover {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
   width: max-content;
   border: 2px solid #f2f2f2;
   border-radius: 25px;
@@ -355,30 +359,35 @@ button:hover {
   color: #0065fc;
 }
 /*endregion*/
-.header--main-info {
-  display: flex;
-  flex-flow: nowrap row;
-  align-items: center;
-  gap: 13px;
-}
-.info--bubble {
-  width: 25px;
-  height: 25px;
-  border: 1px solid #f2f2f2;
-  border-radius: 100%;
-  display: inline-grid;
-  place-content: center;
-}
 
-.fa-info {
-  font-size: 14px;
-  font-weight: 600;
-  color: #0065fc;
-}
 .info--text {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
 }
+
+.info--text::before {
+  width: 25px;
+  height: 25px;
+}
+
+.info--bubble {
+  display: inline-grid;
+  width: 21px;
+  height: 22px;
+  margin-right: 3px;
+  transform: translateY(-2px);
+  border: 1px solid #f2f2f2;
+  border-radius: 100%;
+  place-content: center;
+}
+.fa-info {
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  transform: scaleX(1.3);
+  color: #0065fc;
+}
+
 /*endregion*/
 
 /*region Main Section*/
@@ -388,23 +397,30 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
 }
-/*region Main Section*/
+/*region Global Props*/
+.hosting-layout {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+/*endregion*/
 /*region Hosting Section*/
 .hosting {
   padding-top: 40px;
 }
 
 .hosting .card--wrapper {
-  gap: 27px;
   margin-top: 27px;
+  gap: 27px;
 }
 
 .hosting .card {
-  height: 198px;
   overflow: hidden;
+  height: 198px;
   border: 5px solid white;
-  background-color: white;
   border-radius: 20px;
+  background-color: white;
 }
 
 .hosting .card-link {
@@ -412,15 +428,15 @@ button:hover {
   height: 100%;
 }
 .hosting .card-header {
-  height: 114px;
-  width: 100%;
   overflow: hidden;
+  width: 100%;
+  height: 114px;
 }
 .hosting .card-header img {
-  object-fit: cover;
-  object-position: center;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .hosting .card-content {
   padding-top: 8px;
@@ -457,24 +473,24 @@ button:hover {
   color: #f2f2f2;
 }
 .hosting .link-footer {
-  display: block;
   font-size: 20px;
   font-weight: 600;
+  display: block;
   margin-block: 42px;
 }
 /*endregion*/
 /*region Most Popular Section*/
 .most-popular {
-  padding-inline: 30px;
   padding-top: 40px;
-  background-color: #f2f2f2;
   border-radius: 20px;
+  background-color: #f2f2f2;
 }
+
 .most-popular .card--wrapper {
-  gap: 30px;
-  flex-direction: row;
   align-items: flex-start;
+  flex-direction: row;
   justify-content: center;
+  gap: 30px;
   margin-block: 28px;
 }
 .most-popular--header {
@@ -485,29 +501,29 @@ button:hover {
   font-size: 22px;
 }
 .most-popular .card {
-  height: 145px;
   overflow: hidden;
+  height: 145px;
   border: 5px solid white;
-  background-color: white;
   border-radius: 20px;
+  background-color: white;
 }
 
 .most-popular .card-link {
   display: flex;
   width: 100%;
   height: 100%;
-  gap: 20px
+  gap: 20px;
 }
 .most-popular .card-header {
+  overflow: hidden;
   width: 127px;
   height: 100%;
-  overflow: hidden;
 }
 .most-popular .card-header img {
-  object-fit: cover;
-  object-position: center ;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .most-popular .card-content {
@@ -525,7 +541,7 @@ button:hover {
   font-weight: 300;
   padding-bottom: 41px;
 }
-.most-popular strong{
+.most-popular strong {
   font-weight: 500;
 }
 .most-popular .card-content div {
@@ -537,15 +553,58 @@ button:hover {
   color: #0065fc;
 }
 .most-popular .card:nth-of-type(2) i:last-of-type,
-.most-popular .card:nth-of-type(3) i:last-of-type{
+.most-popular .card:nth-of-type(3) i:last-of-type {
   color: #f2f2f2;
 }
+
 /*endregion*/
+/*region Activities*/
+.activities .card--wrapper {
+  margin-block: 27px;
+}
+
+.activities .card {
+  overflow: hidden;
+  background-color: white;
+}
+.activities .card-link {
+  width: 100%;
+  height: 100%;
+}
+
+.activities .card-header {
+  overflow: hidden;
+  width: 100%;
+}
+.activities .card-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 /*endregion*/
 /*endregion*/
 
 /*region Footer*/
-footer {
-  display: none;
+.footer {
+  width: 100%;
+  height: 218px;
+  background-color: #f2f2f2;
+  padding-block: 47px;
+}
+
+.footer .inner-container {
+  display: flex;
+  max-width: 1350px;
+  gap: 18.5%;
+  margin-inline: auto;
+  padding-inline: min(47px, max(20px, 1%));
+}
+
+.footer section h3 {
+  margin-bottom: 25px;
+}
+.footer section a {
+  display: block;
+  margin-bottom: 15px;
 }
 /*endregion*/
