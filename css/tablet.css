@@ -10,8 +10,8 @@
   }
 
   .hosting .card--wrapper {
-  justify-content: center;
-}
+    justify-content: center;
+  }
 
   .most-popular {
     order: -1;
@@ -48,9 +48,6 @@
     padding-left: 17px;
   }
 
-  /*endregion*/
-
-  /*region Footer*/
   .footer {
     height: auto;
   }
@@ -58,5 +55,4 @@
     flex-direction: column;
     gap: 40px;
   }
-  /*endregion*/
 }

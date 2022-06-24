@@ -168,7 +168,7 @@ button:hover {
 /*region Card Hover Animation and Shadow*/
 .card {
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.2),
-    0 0 0 1px rgba(236, 236, 236, 0.3);
+  0 0 0 1px rgba(236, 236, 236, 0.3);
 }
 .hosting .card:hover header,
 .hosting .card:hover .card-content {
@@ -181,7 +181,7 @@ button:hover {
 .card:hover {
   transform: scale(1.1);
   box-shadow: 0 3px 25px rgba(100, 100, 100, 0.3),
-    0 0 0 1px rgba(236, 236, 236, 0.3);
+  0 0 0 1px rgba(236, 236, 236, 0.3);
 }
 .card:hover img {
   filter: grayscale(100%);
@@ -587,10 +587,10 @@ button:hover {
 /*region Footer*/
 .footer {
   width: 100%;
-  height: 218px;
   background-color: #f2f2f2;
   padding-block: 47px;
 }
+
 
 .footer .inner-container {
   display: flex;

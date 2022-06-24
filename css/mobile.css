@@ -1,5 +1,4 @@
 @media only screen and (max-width: 768px) {
-  /*region Layout Desktop Margin*/
   .header > section {
     margin-inline: 20px;
   }
@@ -11,13 +10,10 @@
     border-radius: 0;
     padding-inline: 20px;
   }
-  /*endregion*/
-  /*region Header*/
   .header {
     gap: 35px;
   }
 
-  /*region Navigation*/
   .navigation {
     align-items: center;
     flex-direction: column;
@@ -38,8 +34,6 @@
   .navigation--link:hover {
     border-bottom: 3px solid #0065fc;
   }
-  /*endregion*/
-  /*region Header Section*/
   .header > section {
     gap: 30px;
   }
@@ -49,7 +43,6 @@
   .header--main-title {
     width: 293px;
   }
-  /*region Header Form*/
   .header--main-form {
     width: 332px;
   }
@@ -70,8 +63,6 @@
   .search-icon {
     display: inline-block;
   }
-  /*endregion*/
-  /*region Header Filters*/
   .header--main-filters {
     column-gap: 12px;
     row-gap: 14px;
@@ -87,26 +78,17 @@
     padding-right: 20px;
     padding-left: 12px;
   }
-  /*endregion*/
-  /*region Header Informations*/
   .text-line-break{
     display: block;
     margin-left: 30px;
   }
 
-  /*endregion*/
-  /*endregion*/
-  /*endregion*/
-  /*region Main Section*/
-  /*region Hosting Section*/
   .hosting .card {
     width: min(334px, 97%);
   }
   .hosting .card--wrapper {
     justify-content: center;
   }
-  /*endregion*/
-  /*region Most Popular Section*/
   .most-popular {
     order: -1;
   }
@@ -117,8 +99,6 @@
     width: 177px;
   }
 
-  /*endregion*/
-  /*region Section Activities*/
   .activities {
     padding-top: 20px;
   }
@@ -187,9 +167,6 @@
     padding-left: 17px;
   }
 
-  /*endregion*/
-  /*endregion*/
-  /*region Footer*/
   .footer {
     height: auto;
   }
@@ -197,5 +174,4 @@
     flex-direction: column;
     gap: 40px;
   }
-  /*endregion*/
 }
